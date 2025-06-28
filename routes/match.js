@@ -29,5 +29,9 @@ router.get('/match/:userId', async (req, res) => {
     res.status(500).json({ message: 'Server error' });
   }
 });
+console.log('Finding matches for user:', currentUserId);
+console.log('Selected movies:', selectedMovies);
+console.log('Users fetched:', allUsers.length);
+
 
 module.exports = router;
